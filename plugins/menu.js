@@ -298,7 +298,7 @@ const listMessage = {
   sections
 }
   if (teks == '404') {
-  	return conn.sendMessage(m.chat, listMessage, { quoted: m, mentions: await conn.parseMention(tek), contextInfo:{ forwardingScore: 99999, isForwarded: true }})
+  	return conn.sendMessage(m.chat, message, { quoted: m, mentions: await conn.parseMention(tek), contextInfo:{ forwardingScore: 99999, isForwarded: true }})
     }
   	
  /**************************** TIME *********************/
@@ -498,7 +498,7 @@ const listMessage = {
             mimetype: td,
             fileLength: fsizedoc,
             pageCount: fpagedoc,
-            caption: text,
+            caption: tek,
             footer: titlebot + '\n⚡ Supported By FR Team',
             templateButtons: [
                 {
